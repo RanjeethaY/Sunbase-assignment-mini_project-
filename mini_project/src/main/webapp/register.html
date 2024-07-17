@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    body{
+        display:flex;
+        justify-content: center;
+    }
+    h1{
+        text-align: center;
+    }
+    button{
+        text-align: center;
+        margin-left: 30px;
+    }
+    .main{
+        /* border: 1px solid black; */
+        height: auto;width: 220px;
+        display:flex;
+        justify-content: center;
+    }
+</style>
+</head>
+<body>
+<form action="register">
+<section>
+    <h1>Register</h1>
+    <div class="main">
+    <table>
+        <tr><td><input type="text" name="name" placeholder="Name"></td>
+                <tr><td><input type="email" placeholder="email" name="email"></td></tr>
+                <tr><td><input type="password" placeholder="password" name="password"></td></tr>
+                <tr><td><input list="role" placeholder="role" name="role"></td>
+                    <datalist id="role" >
+                        <option value="Viewer"></option>
+                        <option value="Admin"></option>
+                    </datalist>
+                </tr>
+                <tr><td><input type="checkbox"><span>I accept the Terms and </span></td></tr>
+                <tr><td><br> <button>Register Now</button></td></tr>
+    </table>
+</div><br>
+<span> Have Already an Account?</span><a href="login.html"> login</a>
+</section>
+</form>
+</body>
+</html>
